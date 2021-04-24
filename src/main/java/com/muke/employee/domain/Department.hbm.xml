@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+<hibernate-mapping>
+    <class name="com.muke.employee.domain.Department" table="department">
+    
+    <id name="did" column="did">
+        <generator class="native"></generator>
+    </id>
+    
+   <property name="dname" column="dname" length="20"></property>
+   <property name="ddesc" column="ddesc" length="100"></property>
+   
+   <!-- 关联关系映射 cascade可以用来级联删除 inverse一方放弃外键维护权利保证修改更新-->
+   <set name="employees" cascade="delete" inverse="true">
+        <key column="dno"></key>
+        <one-to-many class="com.muke.employee.domain.Employee"></one-to-many>
+   </set>
+   
+   </class>
+</hibernate-mapping>
