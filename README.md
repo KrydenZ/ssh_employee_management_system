@@ -1,7 +1,7 @@
 # SSH_Employee_Management_System
 
 ## 背景
-《基于SSH实现员工管理系统之案例实现篇》的完整实现代码，主要包括部门管理和员工管理两部分。项目改为使用Maven进行配置，并增加了用于权限控制的过滤器和EasyUI时间插件。
+《基于SSH实现员工管理系统之案例实现篇》的完整实现代码，主要包括部门管理和员工管理两部分。项目改为使用Maven进行配置，并增加了用于权限控制的过滤器和EasyUI时间插件。  
 更新了jdbc.properties文件:MySQL 8.0 以下版本使用com.mysql.jdbc.Driver；MySQL 8.0 以上使用com.mysql.cj.jdbc.Driver。
 
 ## 配置
