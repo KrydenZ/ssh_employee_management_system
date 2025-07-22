@@ -1,4 +1,4 @@
-# SSH_Employee_Management_System
+# ssh_employee_management_system
 
 ## 背景
 慕课网《基于SSH实现员工管理系统之案例实现篇》的完整实现代码，主要包括部门管理和员工管理两部分。项目改为使用Maven进行配置，并增加了用于权限控制的过滤器和EasyUI时间插件。  
